@@ -26,6 +26,8 @@ let acclerationDueToGravity = 9.8
 // 2. "acclerationDueToGravity" is a Double.
 
 struct Dog {
+    
+    // MARK: Stored properties
     let breed: String
     let color: String
     var heightInMetres: Double
@@ -33,4 +35,27 @@ struct Dog {
     var massInKilograms: Double
     let needsRegularGrooming: Bool
     let name: String
+    
+    // MARK: Computed properties
+    var heightInCentimetres: Double {
+        return heightInMetres * 100
+    }
+    
+    var lengthToHeightRatio: Double {
+        return lengthInMetres / heightInMetres
+    }
 }
+
+var myDog = Dog(
+    breed: "Labrador Retriever",
+    color: "yellow",
+    heightInMetres: 0.75,
+    lengthInMetres: 1.0,
+    massInKilograms: 29.48,
+    needsRegularGrooming: false,
+    name: "Piper"
+)
+
+myDog.heightInMetres
+myDog.heightInCentimetres
+myDog.lengthToHeightRatio
