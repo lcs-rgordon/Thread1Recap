@@ -25,4 +25,12 @@ let acclerationDueToGravity = 9.8
 
 // 2. "acclerationDueToGravity" is a Double.
 
-
+struct Dog {
+    let breed: String
+    let color: String
+    var heightInMetres: Double
+    var lengthInMetres: Double
+    var massInKilograms: Double
+    let needsRegularGrooming: Bool
+    let name: String
+}
