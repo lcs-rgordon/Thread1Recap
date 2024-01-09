@@ -14,6 +14,9 @@ import Cocoa
 // - structure
 // - property
 // - instance
+// - stored property
+// - computed property
+
 
 
 var age = 16
