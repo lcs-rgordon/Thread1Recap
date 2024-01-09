@@ -59,3 +59,35 @@ var myDog = Dog(
 myDog.heightInMetres
 myDog.heightInCentimetres
 myDog.lengthToHeightRatio
+
+// Question 7
+//
+// Book structure
+struct Book {
+    
+    // MARK: Stored properties
+    let title: String
+    let author: String
+    let pages: Int
+    let format: String
+    let lengthInCentimetres: Double
+    let widthInCentimetres: Double
+    let heightInCentimetres: Double
+    
+    // MARK: Computed properties
+    var volumeInCubicCentimetres: Double {
+        return lengthInCentimetres * widthInCentimetres * heightInCentimetres
+    }
+}
+
+var currentBookIAmReading = Book(
+    title: "All The Light We Cannot See",
+    author: "Anthony Doerr",
+    pages: 531,
+    format: "hardcover",
+    lengthInCentimetres: 20,
+    widthInCentimetres: 4,
+    heightInCentimetres: 35
+)
+
+currentBookIAmReading.volumeInCubicCentimetres
